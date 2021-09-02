@@ -9,12 +9,11 @@ import {
 import Navbar from './Navbar';
 
 describe(`Navbar`, () => {
-  test('try to delete element with remove button before it appears', () => {
+  test('Check if the navbar logo is on the HTML', () => {
     render(<Router><Navbar /></Router>)
 
     configure({testIdAttribute: 'class'})
     const navbarLogo = screen.getByTestId('navbar__logo');
-    // Check if the add logo is on the HTML
     expect(navbarLogo).toBeInTheDocument();
   })
 

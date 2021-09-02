@@ -1,31 +1,65 @@
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaReact } from "react-icons/fa";
+import * as FaIcons from "react-icons/fa";
 import sourceData from "./Timeline.json";
+import "./Timeline.scss";
 
 interface projectInterface {
   Name: string;
   Desc: string;
   weblink: string;
   techs: string[];
+  className: string;
+  contentStyle?: any;
+  contentArrowStyle: any;
+  iconStyle: any;
+  icon: any;
 }
 
 const Timeline = () => {
   const projects: projectInterface[] = sourceData.projects;
-  console.log(sourceData.projects);
+  // const projectIcon = ({i}) => {
+  //   const key = i
+  //   const component: any = FaIcons[key]
+  //   return component
+  // }
+  // console.log(projectIcon('FaReact'))
+  const testIcon = <FaIcons.FaReact />;
 
   return (
     <div className="timeline">
       <VerticalTimeline>
+        {projects &&
+          projects.map((project) => (
+            <VerticalTimelineElement
+              className={project.className}
+              contentStyle={project.contentStyle}
+              contentArrowStyle={project.contentArrowStyle}
+              iconStyle={project.iconStyle}
+              icon={testIcon}
+            >
+                <h3 className="vertical-timeline-element-title">
+                  {project.Name}
+                </h3>
+                {/* <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+                <div className="thumbnail-container">
+                  <div className="thumbnail">
+                    <iframe src={project.weblink} frameBorder="0"></iframe>
+                  </div>
+                </div>
+                <p>{project.Desc}</p>
+            </VerticalTimelineElement>
+          ))}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">Creative Director</h3>
           <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
@@ -37,7 +71,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">Art Director</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -51,7 +85,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">Web Designer</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -62,7 +96,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">Web Designer</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -73,7 +107,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">
             Content Marketing for Web, Mobile and Social Media
@@ -84,7 +118,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">
             Agile Development Scrum Master
@@ -95,7 +129,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         >
           <h3 className="vertical-timeline-element-title">
             Bachelor of Science in Interactive Digital Media Visual Imaging
@@ -107,7 +141,7 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<FaReact />}
+          icon={testIcon}
         />
       </VerticalTimeline>
     </div>

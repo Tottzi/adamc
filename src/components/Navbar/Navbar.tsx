@@ -4,11 +4,21 @@ import "./Navbar.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import logo from "../../images/logo.png";
+import {
+  iconStyleFa,
+  iconStyleFaHover,
+  iconStyleFi,
+  iconStyleFiHover,
+} from "./iconestyles";
 
 const Navbar = () => {
   const navEffect = useRef(null);
   const [scrolled, setScrolled] = useState(false);
-  const initialHover = {
+  const initialHover: {
+    faLinkedin: boolean;
+    faGithub: boolean;
+    fiMail: boolean;
+  } = {
     faLinkedin: false,
     faGithub: false,
     fiMail: false,
@@ -21,24 +31,6 @@ const Navbar = () => {
       setScrolled(false);
     }
   };
-  const iconStyleFa = {
-    width: "2rem",
-    height: "2rem",
-    fill: "white",
-    cursor: "pointer",
-    margin: "0.75rem",
-    transition: "500ms",
-  };
-  const iconStyleFaHover = { ...iconStyleFa, fill: "blue" };
-  const iconStyleFi = {
-    width: "2rem",
-    height: "2rem",
-    stroke: "white",
-    cursor: "pointer",
-    margin: "0.75rem",
-    transition: "500ms",
-  };
-  const iconStyleFiHover = { ...iconStyleFi, stroke: "blue" };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
