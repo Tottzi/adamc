@@ -1,21 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 .navbar {
+  font-family: 'Russo One', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
-  height: 100px;
+  height: 80px;
   top: 0;
   width: 100%;
   position: sticky;
   z-index: 1;
   box-shadow: 1px 9px 21px 0px rgba(255,243,243,0.75);
+  opacity: 0.9;
+  transition: 1500ms;
   &__logo {
     align-self: center;
-    max-width: 100px;
+    max-height: 80px;
     color: white;
     cursor: pointer;
+    margin-left: 1rem;
     &:hover {
-      max-width: 105px;
+      border-radius: 50px;
+      background-color: rgba(104, 104, 104, 0.556);
+    }
+  }
+  &--scrolled{
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+    transition: 1000ms;
+  }
+  &-right{
+    margin: 0.65rem;
+    margin-right: 1rem;
+  }
+  &-right>a{
+   &:hover{
+    fill: blue
+   }
+  }
+  &-middle{
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  &-middle>a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    transition: 500ms;
+    &:hover{
+      color: rgba(0, 0, 255, 0.7);
+      transition: 500ms;
     }
   }
 }
