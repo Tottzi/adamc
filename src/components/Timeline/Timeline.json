@@ -1,0 +1,21 @@
+{
+  "projects":
+  [
+    {
+    "Name": "NWCC site",
+    "Desc": "A practice website for a musician group",
+    "weblink": "http://nwcc.herokuapp.com/",
+    "techs": [
+      "NodeJS", "ExpressJS", "MongoDB"
+    ]
+  },
+  {
+    "Name": "NWCC site",
+    "Desc": "A practice website for a musician group",
+    "weblink": "http://nwcc.herokuapp.com/",
+    "techs": [
+      "NodeJS", "ExpressJS", "MongoDB"
+    ]
+  }
+  ]
+}

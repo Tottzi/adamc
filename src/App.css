@@ -1,4 +1,13 @@
+body {
+  background-color: black;
+  background-image: url('https://files.wallpaperpass.com/2019/10/coding%20wallpaper%20054%20-%204000x2920.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .App {
+  min-height: 100vh;
   text-align: center;
 }
 

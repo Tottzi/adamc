@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  box-shadow: 1px 9px 21px 0px rgba(255,243,243,0.75);
+  &__logo {
+    align-self: center;
+    max-width: 100px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      max-width: 105px;
+    }
+  }
+}
