@@ -1,36 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
 
-
-.vertical-timeline-element{
-  font-family: 'Roboto', sans-serif;
-  color: rgb(51, 51, 51);
+.vertical-timeline-element {
+  font-family: "Roboto", sans-serif;
+  color: rgb(148, 148, 148);
   margin-bottom: 7rem;
   padding: 0.1rem;
-  &-content{
+  &-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.5) inset;
+    box-shadow: 1px 0px 5px 5px rgba(255, 255, 255, 0.5) inset;
     padding: 0.1rem;
+    background-color: rgb(0, 0, 0);
   }
-  &-title{
+  &-title {
     text-align: left;
     margin-bottom: 1rem;
     width: 100%;
     text-decoration: underline;
   }
-  &-desc{
+  &-desc {
     text-align: left;
     padding: 0.2rem;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
   }
-  &-image{
+  &-image {
     max-width: 400px;
     max-height: 200px;
     align-self: center;
   }
-  &-techs{
+  &-techs {
     display: flex;
     margin: 0;
     margin-bottom: 0.5rem;
@@ -38,34 +38,34 @@
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     width: 100%;
-    &__title{
+    &__title {
       text-align: left;
       padding: 0;
       margin: 0;
     }
-    &__button{
+    &__button {
       border: 1px solid grey;
-      box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.5) inset;
+      box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.5) inset;
       background-color: lightcyan;
+      color:rgb(114, 112, 112);
       border-radius: 10px;
       padding: 0;
       margin: 0.3rem;
       max-height: 40px;
-      &--text{
+      &--text {
         padding: 0.2rem;
         margin: 0.2rem;
       }
-
     }
   }
-  &-footer{
-    &__link:hover{
-      background-color: white;
-    }
-  }
+  // &-footer {
+  //   &__link:hover {
+  //     background-color: white;
+  //   }
+  // }
 }
 
-.vertical-timeline-element--work{
+.vertical-timeline-element--work {
   max-height: 400px;
 }
 .thumbnail iframe {

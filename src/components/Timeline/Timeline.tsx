@@ -35,7 +35,7 @@ type iconstyle = {
 const iconStyleFa: iconstyle = {
   width: "2rem",
   height: "2rem",
-  fill: "black",
+  fill: "white",
   cursor: "pointer",
   margin: "0.75rem",
   transition: "500ms",
