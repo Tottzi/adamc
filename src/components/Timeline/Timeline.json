@@ -1,30 +1,86 @@
 {
-  "projects":
-  [
+  "projects": [
     {
-    "Name": "NWCC site",
-    "Desc": "A practice website for a musician group",
-    "weblink": "http://nwcc.herokuapp.com/",
-    "techs": [
-      "NodeJS", "ExpressJS", "MongoDB"
-    ],
-    "className": "vertical-timeline-element--work",
-    "contentStyle": { "background": "rgb(33, 150, 243)", "color": "#fff" },
-    "contentArrowStyle": { "borderRight": "7px solid  rgb(33, 150, 243)" },
-    "iconStyle": { "background": "rgb(33, 150, 243)", "color": "#fff" },
-    "icon": "FaReact"
-  },
-  {
-    "Name": "NWCC site",
-    "Desc": "A practice website for a musician group",
-    "weblink": "http://nwcc.herokuapp.com/",
-    "techs": [
-      "NodeJS", "ExpressJS", "MongoDB"
-    ],
-    "className": "vertical-timeline-element--work",
-    "contentArrowStyle": { "borderRight": "7px solid  rgb(33, 150, 243)" },
-    "iconStyle": { "background": "#fff", "color": "000" },
-    "icon": "FaReact"
-  }
+      "Name": "Movie friend website",
+      "Desc": "A movie fun website where people can search for movies, rate them, and leave comment on the individual coments. Furthermore you can collect it on your own MyMovie view.",
+      "weblink": "https://hackday-mymovies-frontend.herokuapp.com/",
+      "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630657031/portolio/Skjermbilde_2021-09-03_101658_fxsgxp.jpg",
+      "github": "",
+      "techs": [
+        "NodeJS",
+        "ExpressJS",
+        "ReactJS",
+        "Cloudinary",
+        "Bcrypt",
+        "Redux"
+      ],
+      "className": "vertical-timeline-element--work",
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    },
+    {
+      "Name": "TradeJack",
+      "Desc": "A service finder app where the customer can submit jobs what the entrepreneur can apply.",
+      "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630657834/portolio/Skjermbilde_2021-09-03_102754_hlxufy.jpg",
+      "weblink": "https://youtu.be/2RHhyVpoSmg",
+      "github": "https://github.com/Rawa08/Tradejack-frontend",
+      "techs": ["NodeJS", "ExpressJS", "SocketIO", "JWT", "Redux"],
+      "className": "vertical-timeline-element--work",
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    },
+    {
+      "Name": "Todo app with React/Redux, Redux Toolkit",
+      "Desc": "A todo app with redux toolkit based on my early todo app.",
+      "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630656499/portolio/Skjermbilde_2021-09-03_100806_cntywd.jpg",
+      "github": "",
+      "techs": ["NodeJS", "ReactJS", "Redux", "SASS"],
+      "className": "vertical-timeline-element--work",
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    },
+    {
+      "Name": "Todo app with react",
+      "Desc": "First React app. I made a todo app to practice and explore the ReactJS benefits. ",
+      "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630656087/portolio/Skjermbilde_2021-09-03_100110_xbn5ma.jpg",
+      "github": "https://github.com/Tottzi/ReactTodo",
+      "techs": ["NodeJS", "ReactJS", "SASS"],
+      "className": "vertical-timeline-element--work",
+      "contentArrowStyle": { "borderRight": "7px solid  rgb(33, 150, 243)" },
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    },
+    {
+      "Name": "Picture finder site",
+      "Desc": "A picture finder website where I learned to use different technologies. Pagination, webpack, AWS deployement etc...",
+      "weblink": "https://ninja-spa.s3.us-east-2.amazonaws.com/",
+      "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630654919/portolio/Skjermbilde_2021-09-03_094133_blsnwx.jpg",
+      "github": "https://github.com/Tottzi/NinjaSpa",
+      "techs": ["NodeJS", "Webpack", "AWS", "SASS"],
+      "className": "vertical-timeline-element--work",
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    },
+    {
+      "Name": "NWCC site",
+      "Desc": "A practice website for a musician group",
+      "weblink": "http://nwcc.herokuapp.com/",
+      "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630652935/portolio/Skjermbilde_2021-09-03_090231_cazc8y.jpg",
+      "github": "https://github.com/Tottzi/NWCC",
+      "techs": ["NodeJS", "ExpressJS", "MongoDB"],
+      "className": "vertical-timeline-element--work",
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    },
+    {
+      "Name": "YelpCamp",
+      "Desc": "A practice website about how I can connect mongodb with NodeJs. It is a website where the client can book camping.",
+      "picture": "https://d33wubrfki0l68.cloudfront.net/c5fcb7dab04b1ef7a8e84e27b062df0f9c352221/43888/project/yelpcamp/featured_hucb80b64f45b6fb53f3a42f67f281e35f_499342_720x0_resize_lanczos_2.png",
+      "github": "https://github.com/Tottzi/YelpCamp",
+      "techs": ["NodeJS", "ExpressJS", "MongoDB"],
+      "className": "vertical-timeline-element--work",
+      "iconStyle": { "background": "#fff", "color": "#000" },
+      "icon": "FaReact"
+    }
   ]
 }

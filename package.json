@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "intersection-observer": "^0.12.0"
   }
 }

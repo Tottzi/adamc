@@ -9,6 +9,12 @@
     margin-bottom: 1rem;
     width: 100%;
   }
+  &-desc{
+    text-align: left;
+  }
+  &-image{
+    max-width: 400px;
+  }
 }
 
 .vertical-timeline-element--work{
