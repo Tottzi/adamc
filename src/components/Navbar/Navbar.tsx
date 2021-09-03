@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
@@ -49,10 +48,10 @@ const Navbar = () => {
           <img className="navbar__logo" alt="logo" src={logo} />
         </div>
         <div className="navbar-middle">
-          <Link to="#timeline">About</Link>
-          <Link to="#timeline">Skills</Link>
-          <Link to="#timeline">Work</Link>
-          <Link to="#timeline">Contact</Link>
+          <a href="#about">About</a>
+          <a href="#timeline">Skills</a>
+          <a href="#timeline">Work</a>
+          <a href="#timeline">Contact</a>
         </div>
         <div className="navbar-right">
           <a

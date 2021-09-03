@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -7,42 +7,32 @@ import "react-vertical-timeline-component/style.min.css";
 import * as FaIcons from "react-icons/fa";
 import sourceData from "./Timeline.json";
 import "./Timeline.scss";
-
-interface projectInterface {
-  Name: string;
-  Desc: string;
-  weblink?: string;
-  picture?: string;
-  github: string;
-  techs: string[];
-  className: string;
-  contentStyle?: any;
-  contentArrowStyle?: any;
-  iconStyle: any;
-  icon: any;
-}
-
-type iconstyle = {
-  width: string;
-  height: string;
-  fill?: string;
-  stroke?: string;
-  cursor: string;
-  margin: string;
-  transition: string;
-};
-
-const iconStyleFa: iconstyle = {
-  width: "2rem",
-  height: "2rem",
-  fill: "white",
-  cursor: "pointer",
-  margin: "0.75rem",
-  transition: "500ms",
-};
+import { projectInterface, iconstyle } from "./types";
 
 const Timeline = () => {
+  const initialHover: {
+    faLinkedin: boolean;
+    faGithub: boolean;
+    fiMail: boolean;
+  } = {
+    faLinkedin: false,
+    faGithub: false,
+    fiMail: false,
+  };
+  const [hover, sethover] = useState(initialHover);
   const projects: projectInterface[] = sourceData.projects;
+  const iconStyleFa: iconstyle = {
+    width: "2rem",
+    height: "2rem",
+    fill: "white",
+    cursor: "pointer",
+    margin: "0.75rem",
+    transition: "500ms",
+  };
+  const iconStyleFaHover: iconstyle = {
+    ...iconStyleFa,
+    fill: "rgba(0, 228, 239, 1)",
+  };
   // const projectIcon = ({i}) => {
   //   const key = i
   //   const component: any = FaIcons[key]
@@ -52,7 +42,8 @@ const Timeline = () => {
   const testIcon = <FaIcons.FaReact />;
 
   return (
-    <div className="timeline">
+    <div className="timeline" id="timeline">
+      <div className='timeline-fakebox'></div>
       <VerticalTimeline>
         {projects &&
           projects.map((project) => (
@@ -100,7 +91,15 @@ const Timeline = () => {
                   rel="noreferrer"
                   href={project.github}
                 >
-                  <FaIcons.FaGithub style={iconStyleFa} />
+                  <FaIcons.FaGithub
+                    onMouseEnter={() =>
+                      sethover({ ...hover, faLinkedin: !hover.faLinkedin })
+                    }
+                    onMouseLeave={() =>
+                      sethover({ ...hover, faLinkedin: !hover.faLinkedin })
+                    }
+                    style={!hover.faLinkedin ? iconStyleFa : iconStyleFaHover}
+                  />
                 </a>
               </footer>
             </VerticalTimelineElement>

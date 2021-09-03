@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
 
+.timeline-fakebox{
+  height: 80px;
+}
 .vertical-timeline-element {
   font-family: "Roboto", sans-serif;
   color: rgb(148, 148, 148);
   margin-bottom: 7rem;
+  margin-top: 7rem;
   padding: 0.1rem;
+  transition: 500ms;
   &-content {
     display: flex;
     flex-direction: column;
@@ -12,6 +17,11 @@
     box-shadow: 1px 0px 5px 5px rgba(255, 255, 255, 0.5) inset;
     padding: 0.1rem;
     background-color: rgb(0, 0, 0);
+    transition: 500ms;
+    &:hover{
+      color: white;
+      transition: 500ms;
+    }
   }
   &-title {
     text-align: left;
@@ -46,7 +56,7 @@
     &__button {
       border: 1px solid grey;
       box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.5) inset;
-      background-color: lightcyan;
+      background-color: rgba(0, 228, 239, 1);
       color:rgb(114, 112, 112);
       border-radius: 10px;
       padding: 0;

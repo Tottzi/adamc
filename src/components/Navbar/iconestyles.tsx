@@ -16,7 +16,7 @@ export const iconStyleFa: iconstyle = {
   margin: "0.75rem",
   transition: "500ms",
 };
-export const iconStyleFaHover: iconstyle = { ...iconStyleFa, fill: "blue" };
+export const iconStyleFaHover: iconstyle = { ...iconStyleFa, fill: "rgba(0, 228, 239, 1)" };
 export const iconStyleFi: iconstyle = {
   width: "2rem",
   height: "2rem",
@@ -25,4 +25,4 @@ export const iconStyleFi: iconstyle = {
   margin: "0.75rem",
   transition: "500ms",
 };
-export const iconStyleFiHover: iconstyle = { ...iconStyleFi, stroke: "blue" };
+export const iconStyleFiHover: iconstyle = { ...iconStyleFi, stroke: "rgba(0, 228, 239, 1)" };

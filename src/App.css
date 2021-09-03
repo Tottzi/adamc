@@ -9,6 +9,9 @@ body {
 .App {
   min-height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {

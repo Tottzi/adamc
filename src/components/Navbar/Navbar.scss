@@ -13,24 +13,27 @@
   z-index: 1;
   box-shadow: 1px 9px 21px 0px rgba(255,243,243,0.75);
   opacity: 0.9;
-  transition: 1500ms;
+  transition: 500ms;
+  &:hover{
+    opacity: 1;
+  }
   &__logo {
     align-self: center;
     max-height: 80px;
     color: white;
     cursor: pointer;
     margin-left: 1rem;
-    transition: 1000ms;
+    transition: 500ms;
     &:hover {
       border-radius: 50px;
       background-color: rgba(104, 104, 104, 0.556);
-      transition: 1000ms;
+      transition: 500ms;
     }
   }
   &--scrolled{
     background: rgb(0, 0, 0);
-    opacity: 0.7;
-    transition: 1000ms;
+    opacity: 0.5;
+    transition: 500ms;
   }
   &-right{
     margin: 0.65rem;
@@ -51,7 +54,7 @@
     margin: 1rem;
     transition: 500ms;
     &:hover{
-      color: rgba(0, 0, 255, 0.7);
+      color: rgba(0, 228, 239, 1);
       transition: 500ms;
     }
   }
