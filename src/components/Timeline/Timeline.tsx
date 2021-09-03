@@ -22,6 +22,25 @@ interface projectInterface {
   icon: any;
 }
 
+type iconstyle = {
+  width: string;
+  height: string;
+  fill?: string;
+  stroke?: string;
+  cursor: string;
+  margin: string;
+  transition: string;
+};
+
+const iconStyleFa: iconstyle = {
+  width: "2rem",
+  height: "2rem",
+  fill: "black",
+  cursor: "pointer",
+  margin: "0.75rem",
+  transition: "500ms",
+};
+
 const Timeline = () => {
   const projects: projectInterface[] = sourceData.projects;
   // const projectIcon = ({i}) => {
@@ -47,6 +66,16 @@ const Timeline = () => {
               <h1 className="vertical-timeline-element-title">
                 {project.Name}
               </h1>
+              <h6 className="vertical-timeline-element-techs__title">Techs:</h6>
+              <div className="vertical-timeline-element-techs">
+                {project.techs.map((tech) => (
+                  <div className="vertical-timeline-element-techs__button">
+                    <h5 className="vertical-timeline-element-techs__button--text">
+                      {tech}
+                    </h5>
+                  </div>
+                ))}
+              </div>
               {project.weblink ? (
                 <a target="_blank" rel="noreferrer" href={project.weblink}>
                   <img
@@ -64,6 +93,16 @@ const Timeline = () => {
               )}
               {/* <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
               <p className="vertical-timeline-element-desc">{project.Desc}</p>
+              <footer className="vertical-timeline-element-footer">
+                <a
+                  className="vertical-timeline-element-footer__link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={project.github}
+                >
+                  <FaIcons.FaGithub style={iconStyleFa} />
+                </a>
+              </footer>
             </VerticalTimelineElement>
           ))}
         {/* <VerticalTimelineElement
