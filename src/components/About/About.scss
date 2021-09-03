@@ -37,13 +37,11 @@
     width: 4rem;
     background-color: black;
     border-radius: 50%;
-    position: absolute;
-    bottom: 1rem;
     width: var(--logo-size);
     height: var(--logo-size);
     border-radius: 100%;
     position: absolute;
-    top: var(--offset);
+    bottom: var(--offset);
     left: calc(50% - var(--logo-size) / 2);
     animation-name: bounce;
     animation-duration: 1s;
@@ -55,7 +53,7 @@
 :root {
   --drop-height: 50px;
   --logo-size: 4rem;
-  --offset: 700px;
+  --offset: 2rem;
   --shadow-height: 8px;
 }
 

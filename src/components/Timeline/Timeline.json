@@ -52,7 +52,7 @@
     {
       "Name": "Picture finder site:",
       "Desc": "A picture finder website where I learned to use different technologies. Pagination, webpack, AWS deployement etc...",
-      "weblink": "https://ninja-spa.s3.us-east-2.amazonaws.com/",
+      "weblink": "http://ninja-spa.s3-website.us-east-2.amazonaws.com/",
       "picture": "https://res.cloudinary.com/tottzi/image/upload/v1630654919/portolio/Skjermbilde_2021-09-03_094133_blsnwx.jpg",
       "github": "https://github.com/Tottzi/NinjaSpa",
       "techs": ["NodeJS", "Webpack", "AWS", "SASS"],
