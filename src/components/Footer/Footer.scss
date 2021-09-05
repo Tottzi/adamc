@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  &-container {
+    &__header {
+      text-align: center;
+    }
+  }
+  &-container ul {
+    padding-left: 0.5rem;
+    // margin-left: 0;
+    text-align: left;
+  }
+  &-container li {
+    padding-left: 0.5rem;
+    // margin-left: 0;
+    text-align: left;
+  }
+}

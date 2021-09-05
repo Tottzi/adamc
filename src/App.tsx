@@ -10,6 +10,8 @@ import './App.css';
 import Timeline from './components/Timeline/Timeline';
 import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
       <div className="App">
         <Navbar />
         <About />
+        <Skills />
         <Timeline />
+        <Footer />
       </div>
     </Router>
   );

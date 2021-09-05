@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .about {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
     margin-bottom: 10rem;
   }
   &-pic {
-    margin: 1rem 3rem 1rem;
+    margin: 2rem 3rem 2rem;
   }
   &-pic > img {
     border-radius: 50%;

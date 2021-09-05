@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .timeline-fakebox{
   height: 80px;
 }
 .vertical-timeline-element {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   color: rgb(148, 148, 148);
   margin-bottom: 7rem;
   margin-top: 7rem;
@@ -54,10 +54,9 @@
       margin: 0;
     }
     &__button {
-      border: 1px solid grey;
+      border: 3px solid rgba(0, 228, 239, 1);;
       box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.5) inset;
-      background-color: rgba(0, 228, 239, 1);
-      color:rgb(114, 112, 112);
+      // background-color: rgba(0, 228, 239, 1);
       border-radius: 10px;
       padding: 0;
       margin: 0.3rem;
@@ -68,11 +67,6 @@
       }
     }
   }
-  // &-footer {
-  //   &__link:hover {
-  //     background-color: white;
-  //   }
-  // }
 }
 
 .vertical-timeline-element--work {

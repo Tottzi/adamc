@@ -49,9 +49,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-middle">
           <a href="#about">About</a>
-          <a href="#timeline">Skills</a>
+          <a href="#skills">Skills</a>
           <a href="#timeline">Work</a>
-          <a href="#timeline">Contact</a>
+          <a href="#footer">Contact</a>
         </div>
         <div className="navbar-right">
           <a
