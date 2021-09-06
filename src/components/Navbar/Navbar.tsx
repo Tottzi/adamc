@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-scroll";
 import "./Navbar.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
@@ -48,10 +49,10 @@ const Navbar = () => {
           <img className="navbar__logo" alt="logo" src={logo} />
         </div>
         <div className="navbar-middle">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#timeline">Work</a>
-          <a href="#footer">Contact</a>
+          <Link to="about">About</Link>
+          <Link to="skills">Skills</Link>
+          <Link to="timeline">Work</Link>
+          <Link to="footer">Contact</Link>
         </div>
         <div className="navbar-right">
           <a
