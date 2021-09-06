@@ -75,6 +75,10 @@
 
 @media screen and(min-width: 690px){
   .about{
+    background: transparent;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
     margin-top: auto;
     &-container{
       flex-direction: column;

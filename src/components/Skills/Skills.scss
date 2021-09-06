@@ -3,15 +3,15 @@
 .skills {
   font-family: "Ubuntu Mono", monospace;
   font-size: 1.3rem;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
   margin-bottom: 4rem;
   color: white;
+  background-color: white;
   list-style-type: none;
   &__title {
     border: 5px double white;
@@ -102,6 +102,9 @@
 
 @media screen and(min-width: 690px){
   .skills{
+    background-color: transparent;
+    height: 100vh;
+    padding-top: 4rem;
     &-title{
       border: 5px double white;
       border-bottom: none;

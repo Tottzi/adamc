@@ -4,7 +4,7 @@
   height: 80px;
 }
 .timeline{
-  background-color: black;
+  background: black;
   padding-left: 0;
   margin-left: 0;
   max-width: 100%;
@@ -95,10 +95,16 @@
   -webkit-transform: scale(0.25);
   -webkit-transform-origin: 0 0;
 }
-
+@media screen and(min-width: 609px){
+  .timeline{
+    background: transparent;
+    
+  }
+}
 @media screen and(min-width: 1170px){
   .timeline{
     width: 100%;
+
   }
   .vertical-timeline-element {
     &-image {
