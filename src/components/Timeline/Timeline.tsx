@@ -35,12 +35,18 @@ const Timeline = () => {
     ...iconStyleFa,
     fill: "rgba(0, 228, 239, 1)",
   };
-  // const projectIcon = ({i}) => {
-  //   const key = i
-  //   const component: any = FaIcons[key]
-  //   return component
-  // }
-  // console.log(projectIcon('FaReact'))
+  
+  interface Icon {
+    FaReact: string,
+    FaGithub: string
+  }
+
+  const projectIcon = (input: keyof Icon ) => {
+    const component = FaIcons[input]
+    return component
+  }
+  console.log(projectIcon('FaReact'))
+
   const testIcon = <FaIcons.FaReact />;
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);
@@ -132,7 +138,7 @@ const Timeline = () => {
           icon={testIcon}
         />
       </VerticalTimeline>
-      <div className='timeline-fakebox'></div>
+      {width < 870 && <div className='timeline-fakebox'></div>}
     </div>
   );
 };

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .about {
+  background: url('https://miro.medium.com/max/3840/1*PyExFMlUFx1Yv_28Nd1BRA.png');
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
   font-family: 'Ubuntu Mono', monospace;
   display: flex;
   flex-direction: column;
@@ -8,7 +12,7 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  margin-top: 6rem;
+  padding-top: 4rem;
   background-color: transparent;
   &-container {
     display: flex;
