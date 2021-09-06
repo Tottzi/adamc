@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -20,6 +20,8 @@ const Timeline = () => {
     fiMail: false,
   };
   const [hover, sethover] = useState(initialHover);
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
   const projects: projectInterface[] = sourceData.projects;
   const iconStyleFa: iconstyle = {
     width: "2rem",
@@ -40,10 +42,17 @@ const Timeline = () => {
   // }
   // console.log(projectIcon('FaReact'))
   const testIcon = <FaIcons.FaReact />;
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    }
+  }, [width])
 
   return (
     <div className="timeline" id="timeline">
-      <div className='timeline-fakebox'></div>
+      {width > 870 && <div className='timeline-fakebox'></div>}
       <VerticalTimeline>
         {projects &&
           projects.map((project) => (
@@ -123,6 +132,7 @@ const Timeline = () => {
           icon={testIcon}
         />
       </VerticalTimeline>
+      <div className='timeline-fakebox'></div>
     </div>
   );
 };

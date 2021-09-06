@@ -9,15 +9,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
   color: white;
   list-style-type: none;
   &__title {
     border: 5px double white;
-    border-bottom: none;
+    // border-bottom: none;
     background-color: black;
     padding: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
     & h3{
       padding: 0;
       margin: 0;
@@ -25,10 +28,10 @@
   }
   &-container {
     display: flex;
+    flex-direction: column;
     &__frontend {
       border: 5px double white;
-
-      border-top-left-radius: 10px;
+      // border-top-left-radius: 10px;
       background-color: black;
       padding: 1rem;
     }
@@ -95,4 +98,31 @@
   // margin-left: 0;
   list-style-type: none;
   text-align: left;
+}
+
+@media screen and(min-width: 690px){
+  .skills{
+    &-title{
+      border: 5px double white;
+      border-bottom: none;
+      background-color: black;
+      padding: 1rem;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-top: 0;
+    }
+    &-container{
+      flex-direction: row;
+      &__frontend {
+        border: 5px double white;
+  
+        border-top-left-radius: 10px;
+        background-color: black;
+        padding: 1rem;
+      }
+    }
+  }
+}
+@media screen and(min-width: 800px){
+
 }

@@ -1,11 +1,3 @@
-body {
-  background-color: black;
-  background-image: url('https://miro.medium.com/max/3840/1*PyExFMlUFx1Yv_28Nd1BRA.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 .App {
   min-height: 100vh;
   text-align: center;
@@ -17,12 +9,6 @@ body {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -40,11 +26,4 @@ body {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

@@ -1,5 +1,5 @@
 .footer {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 200px;
@@ -7,6 +7,7 @@
   background-color: black;
   color: white;
   text-align: center;
+  box-shadow: 1px 9px 21px 0px rgba(255,243,243,0.75);
   &-container {
     &__header {
       text-align: center;
@@ -21,5 +22,11 @@
     padding-left: 0.5rem;
     // margin-left: 0;
     text-align: left;
+  }
+}
+
+@media screen and(min-width: 690px){
+  .footer{
+    display: flex;
   }
 }

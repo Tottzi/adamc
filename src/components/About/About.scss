@@ -8,10 +8,13 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  margin-top: 6rem;
   background-color: transparent;
   &-container {
     display: flex;
-    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
     box-shadow: 1px 0px 5px 5px rgba(255, 255, 255, 0.5) inset;
     background-color: black;
     color: white;
@@ -26,7 +29,7 @@
     max-width: 150px;
   }
   &-text {
-    padding: 2rem 3rem 2rem;
+    padding: 2rem 2rem 2rem;
     text-align: center;
   }
   &-down {
@@ -63,5 +66,26 @@
   }
   to {
     transform: translateY(var(--drop-height)) scale(1, 0.7);
+  }
+}
+
+@media screen and(min-width: 690px){
+  .about{
+    margin-top: auto;
+    &-container{
+      flex-direction: column;
+    }
+    &-pic {
+      margin: 2rem 2rem 2rem;
+    }
+  }
+}
+@media screen and(min-width: 800px){
+  .about{
+
+    &-container{
+      flex-direction: row;
+      width: 70%;
+    }
   }
 }

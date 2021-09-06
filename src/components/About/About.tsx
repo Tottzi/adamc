@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import "./About.scss";
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { initialHover, iconstyle } from "./types";
@@ -9,8 +10,10 @@ const About = () => {
     faGithub: false,
     fiMail: false,
   };
-  const [hover, sethover] = useState(initialHover);
-  const [scrolled, setScrolled] = useState(false);
+  const [hover, sethover] = useState<initialHover>(initialHover);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
   const iconStyleFa: iconstyle = {
     width: "4rem",
     height: "4rem",
@@ -31,15 +34,18 @@ const About = () => {
     } else {
       setScrolled(false);
     }
-  }
+  };
 
   useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResizeWindow);
     };
-  }, [scrolled])
-  
+  }, [scrolled]);
+
   return (
     <div className="about" id="about">
       <div className="about-container">
@@ -56,19 +62,21 @@ const About = () => {
           <h3>Welcome to my site</h3>
         </div>
       </div>
-      <div className="about-down" style={aboutDownStyle}>
-        <a href="#skills">
-          <FaRegArrowAltCircleDown
-            onMouseEnter={() =>
-              sethover({ ...hover, faLinkedin: !hover.faLinkedin })
-            }
-            onMouseLeave={() =>
-              sethover({ ...hover, faLinkedin: !hover.faLinkedin })
-            }
-            style={!hover.faLinkedin ? iconStyleFa : iconStyleFaHover}
-          />
-        </a>
-      </div>
+      {width > 690 && (
+        <div className="about-down" style={aboutDownStyle}>
+          <Link to="skills">
+            <FaRegArrowAltCircleDown
+              onMouseEnter={() =>
+                sethover({ ...hover, faLinkedin: !hover.faLinkedin })
+              }
+              onMouseLeave={() =>
+                sethover({ ...hover, faLinkedin: !hover.faLinkedin })
+              }
+              style={!hover.faLinkedin ? iconStyleFa : iconStyleFaHover}
+            />
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
