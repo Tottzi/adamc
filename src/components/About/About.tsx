@@ -25,7 +25,7 @@ const About = () => {
   };
   const iconStyleFaHover: iconstyle = {
     ...iconStyleFa,
-    fill: "rgba(0, 228, 239, 1)",
+    fill: "rgba(0, 194, 253, 1)",
   };
   const aboutDownStyle = scrolled ? { display: "none" } : { display: "block" };
   const handleScroll = () => {

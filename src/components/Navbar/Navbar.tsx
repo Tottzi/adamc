@@ -1,7 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.scss";
-import { FaLinkedin, FaGithub, FaHome, FaBriefcase, FaTools } from "react-icons/fa";
+import Contact from '../Contact/Contact'
+import {
+  FaLinkedin,
+  FaGithub,
+  FaHome,
+  FaBriefcase,
+  FaTools,
+} from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import logo from "../../images/logo.png";
 import {
@@ -10,11 +17,17 @@ import {
   iconStyleFi,
   iconStyleFiHover,
 } from "./iconestyles";
+import { initialHover } from "../About/types";
 
 const Navbar = () => {
   const navEffect = useRef(null);
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
+
+  const [contact, setContact] = useState<boolean>(false);
+  const handleContact = (): void => {
+    setContact(!contact)
+  }
 
   const initialHover: {
     faLinkedin: boolean;
@@ -25,7 +38,8 @@ const Navbar = () => {
     faGithub: false,
     fiMail: false,
   };
-  const [hover, sethover] = useState(initialHover);
+  const [hover, sethover] = useState<initialHover>(initialHover);
+
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolled(true);
@@ -112,10 +126,27 @@ const Navbar = () => {
     </div>
   ) : (
     <div className="navbar-mobile">
-      <div className="navbar-mobile__icon"><Link to="about"><FaHome /></Link></div>
-      <div className="navbar-mobile__icon"><Link to="skills"><FaTools /></Link></div>
-      <div className="navbar-mobile__icon"><Link to="timeline"><FaBriefcase /></Link></div>
-      <div className="navbar-mobile__icon"><Link to="footer"><FiMail /></Link></div>
+      <div className="navbar-mobile__icon">
+        <Link to="about">
+          <FaHome />
+        </Link>
+      </div>
+      <div className="navbar-mobile__icon">
+        <Link to="skills">
+          <FaTools />
+        </Link>
+      </div>
+      <div className="navbar-mobile__icon">
+        <Link to="timeline">
+          <FaBriefcase />
+        </Link>
+      </div>
+      <div className="navbar-mobile__icon">
+        <div className='navbar-mobile__icon__contact' onClick={handleContact}>
+          <FiMail />
+        </div>
+      </div>
+      {contact && <Contact handleContact={handleContact}/>}
     </div>
   );
 };

@@ -57,7 +57,7 @@
     transition: 500ms;
     cursor: pointer;
     &:hover{
-      color: rgba(0, 228, 239, 1);
+      color: rgba(0, 194, 253, 1);
       transition: 500ms;
     }
 
@@ -84,6 +84,7 @@
     text-align: center;
     height: 70px;
     margin-top: 1rem;
+    cursor: pointer;
   }
 }
 .navbar-test{
