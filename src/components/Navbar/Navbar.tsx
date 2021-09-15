@@ -58,10 +58,10 @@ const Navbar = (props: any) => {
           <img className="navbar__logo" alt="logo" src={logo} />
         </div>
         <div className="navbar-middle">
-          <Link to="about">About</Link>
-          <Link to="skills">Skills</Link>
-          <Link to="timeline">Work</Link>
-          <Link to="footer">Contact</Link>
+          <Link to="about" smooth={true}>About</Link>
+          <Link to="skills" smooth={true}>Skills</Link>
+          <Link to="timeline" smooth={true}>Work</Link>
+          <Link to="footer" smooth={true}>Contact</Link>
         </div>
         {width > 870 && (
           <div className="navbar-right">

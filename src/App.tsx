@@ -18,13 +18,12 @@ function App() {
   const [skills, setSkills ] = useState<boolean>(false);
 
   const handleScroll = () => {
-    console.log(window.scrollY)
     if (window.scrollY > 20) {
       setScrolled(true);
     } else {
       setScrolled(false);
     }
-    if(window.scrollY > 700 ){
+    if(window.scrollY > 600 ){
       setSkills(true)
     } else {
       setSkills(false)
