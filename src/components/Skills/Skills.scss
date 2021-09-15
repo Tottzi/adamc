@@ -20,7 +20,8 @@
     padding: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
+    opacity: 1;
+    transition: 1000ms;
     & h3{
       padding: 0;
       margin: 0;
@@ -29,6 +30,8 @@
   &-container {
     display: flex;
     flex-direction: column;
+    opacity: 1;
+    transition: 1000ms;
     &__frontend {
       border: 5px double white;
       // border-top-left-radius: 10px;
@@ -98,6 +101,11 @@
   // margin-left: 0;
   list-style-type: none;
   text-align: left;
+}
+
+.skills__title--hidden, .skills-container--hidden{
+  opacity: 0;
+  transition: 1000ms;
 }
 
 @media screen and(min-width: 690px){

@@ -19,9 +19,9 @@ import {
 } from "./iconestyles";
 import { initialHover } from "../About/types";
 
-const Navbar = () => {
+const Navbar = (props: any) => {
   const navEffect = useRef(null);
-  const [scrolled, setScrolled] = useState<boolean>(false);
+  // const [scrolled, setScrolled] = useState<boolean>(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
 
   const [contact, setContact] = useState<boolean>(false);
@@ -40,28 +40,18 @@ const Navbar = () => {
   };
   const [hover, sethover] = useState<initialHover>(initialHover);
 
-  const handleScroll = () => {
-    if (window.scrollY > 20) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResizeWindow);
-    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResizeWindow);
     };
-  }, [scrolled]);
+  }, []);
 
   return width > 690 ? (
     <div
       ref={navEffect}
-      className={scrolled ? "navbar navbar--scrolled" : "navbar"}
+      className={props.scrolled ? "navbar navbar--scrolled" : "navbar"}
     >
       <nav className="navbar navbar--scrolled">
         <div className="navbar-left">

@@ -3,14 +3,17 @@
 import "./Skills.scss";
 
 
-const Skills = () => {
+const Skills = (props: any) => {
+
+  const skillsTitleClass = props.skills ? 'skills__title' : 'skills__title skills__title--hidden';
+  const skillsContainerClass = props.skills ? 'skills-container' : 'skills-container skills-container--hidden';
 
   return (
     <div className="skills" id="skills">
-      <header className="skills__title">
+      <header className={skillsTitleClass}>
         <h3>Full-Stack Javascript Developer</h3>
       </header>
-      <div className="skills-container">
+      <div className={skillsContainerClass}>
         <div className="skills-container__frontend">
           <header>Front-end:</header>
           <ul>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect,useState} from 'react';
 import {
   BrowserRouter as Router,
   // Switch,
@@ -14,12 +14,36 @@ import Skills from './components/Skills/Skills';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [skills, setSkills ] = useState<boolean>(false);
+
+  const handleScroll = () => {
+    console.log(window.scrollY)
+    if (window.scrollY > 20) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+    if(window.scrollY > 700 ){
+      setSkills(true)
+    } else {
+      setSkills(false)
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [])
+
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar scrolled={scrolled}/>
         <About />
-        <Skills />
+        <Skills skills={skills}/>
         <Timeline />
         <Footer />
       </div>
