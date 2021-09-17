@@ -64,7 +64,7 @@ const About = () => {
       </div>
       {width > 690 && (
         <div className="about-down" style={aboutDownStyle}>
-          <Link to="skills">
+          <Link to="skills" smooth={true}>
             <FaRegArrowAltCircleDown
               onMouseEnter={() =>
                 sethover({ ...hover, faLinkedin: !hover.faLinkedin })

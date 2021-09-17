@@ -23,7 +23,7 @@ function App() {
     } else {
       setScrolled(false);
     }
-    if(window.scrollY > 600 ){
+    if(window.scrollY > 600 && window.scrollY < 1500 ){
       setSkills(true)
     } else {
       setSkills(false)

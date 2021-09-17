@@ -3,7 +3,7 @@
 .skills {
   font-family: "Ubuntu Mono", monospace;
   font-size: 1.3rem;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,18 +37,21 @@
       // border-top-left-radius: 10px;
       background-color: black;
       padding: 1rem;
+      height: 100%;
     }
     &__backend {
       border: 5px double white;
 
       background-color: black;
       padding: 1rem;
+      height: 100%;
     }
     &__techs {
       border: 5px double white;
       background-color: black;
       padding: 1rem;
       border-top-right-radius: 10px;
+      height: 100%;
     }
   }
   &-down{
@@ -104,15 +107,18 @@
 }
 
 .skills__title--hidden, .skills-container--hidden{
-  opacity: 0;
-  transition: 1000ms;
+  display: none;
+}
+
+.hidden{
+  display: none;
 }
 
 @media screen and(min-width: 690px){
   .skills{
     background-color: transparent;
     height: 100vh;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
     &-title{
       border: 5px double white;
       border-bottom: none;
