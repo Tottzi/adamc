@@ -12,4 +12,5 @@ export type initialHover = {
   faLinkedin: boolean;
   faGithub: boolean;
   fiMail: boolean;
+  aboutCont?: boolean
 }

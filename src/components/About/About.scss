@@ -93,7 +93,7 @@
 
     &-container{
       flex-direction: row;
-      width: 70%;
+      min-width: 50rem;
     }
   }
 }

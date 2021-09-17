@@ -4,15 +4,30 @@ import "./About.scss";
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { initialHover, iconstyle } from "./types";
 
+import { headShake } from "react-animations";
+import Radium from "radium";
+import StyleRoot from "radium";
+
 const About = () => {
   const initialHover: initialHover = {
     faLinkedin: false,
     faGithub: false,
     fiMail: false,
+    aboutCont: false
   };
   const [hover, sethover] = useState<initialHover>(initialHover);
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
+
+  const animationStyles: any = {
+    headShake: {
+      animation: "x 1s",
+      animationName: Radium.keyframes(headShake, "headShake"),
+    },
+    none: {
+      animation: "x 1s",
+    },
+  };
 
   const iconStyleFa: iconstyle = {
     width: "4rem",
@@ -48,7 +63,14 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <div className="about-container">
+            {
+        <StyleRoot.StyleRoot>
+                <div
+            className="about-container"
+            style={hover.aboutCont ? animationStyles.none : animationStyles.headShake}
+            onMouseEnter={() => sethover({...hover, aboutCont: false})}
+            onMouseLeave={() => sethover({...hover, aboutCont: true})}
+          >
         <div className="about-pic">
           <img
             src="https://res.cloudinary.com/tottzi/image/upload/v1630675426/portolio/Skjermbilde_2021_09_03_kl._15.21.44_uxhndz.png"
@@ -77,6 +99,7 @@ const About = () => {
           </Link>
         </div>
       )}
+      </StyleRoot.StyleRoot>}
     </div>
   );
 };
