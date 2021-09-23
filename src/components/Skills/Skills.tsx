@@ -72,7 +72,7 @@ const Skills = (props: any) => {
               className={skillsContainerFrontend}
               style={animationStyles.slideInLeft}
             >
-              <header>Front-end:</header>
+              <header>Back-end:</header>
               <ul>
                 <li>
                   <img
@@ -132,7 +132,7 @@ const Skills = (props: any) => {
               className={skillsContainerBackend}
               style={animationStyles.slideInUp}
             >
-              <header>Back-end:</header>
+              <header>Front-end:</header>
               <ul>
                 <li>
                   <img
