@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/adamc/static/css/main.71eadcd1.chunk.css",
-    "main.js": "/adamc/static/js/main.d7d306db.chunk.js",
-    "main.js.map": "/adamc/static/js/main.d7d306db.chunk.js.map",
-    "runtime-main.js": "/adamc/static/js/runtime-main.6ccf1af9.js",
-    "runtime-main.js.map": "/adamc/static/js/runtime-main.6ccf1af9.js.map",
-    "static/css/2.2aa38b9c.chunk.css": "/adamc/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.ae22fad8.chunk.js": "/adamc/static/js/2.ae22fad8.chunk.js",
-    "static/js/2.ae22fad8.chunk.js.map": "/adamc/static/js/2.ae22fad8.chunk.js.map",
-    "static/js/3.972730b4.chunk.js": "/adamc/static/js/3.972730b4.chunk.js",
-    "static/js/3.972730b4.chunk.js.map": "/adamc/static/js/3.972730b4.chunk.js.map",
+    "main.css": "/adamc/static/css/main.5739ad41.chunk.css",
+    "main.js": "/adamc/static/js/main.96f1fa81.chunk.js",
+    "main.js.map": "/adamc/static/js/main.96f1fa81.chunk.js.map",
+    "runtime-main.js": "/adamc/static/js/runtime-main.cd85ad9d.js",
+    "runtime-main.js.map": "/adamc/static/js/runtime-main.cd85ad9d.js.map",
+    "static/js/2.c4e98195.chunk.js": "/adamc/static/js/2.c4e98195.chunk.js",
+    "static/js/2.c4e98195.chunk.js.map": "/adamc/static/js/2.c4e98195.chunk.js.map",
+    "static/js/3.56d39c19.chunk.js": "/adamc/static/js/3.56d39c19.chunk.js",
+    "static/js/3.56d39c19.chunk.js.map": "/adamc/static/js/3.56d39c19.chunk.js.map",
     "index.html": "/adamc/index.html",
-    "static/css/2.2aa38b9c.chunk.css.map": "/adamc/static/css/2.2aa38b9c.chunk.css.map",
-    "static/css/main.71eadcd1.chunk.css.map": "/adamc/static/css/main.71eadcd1.chunk.css.map",
-    "static/js/2.ae22fad8.chunk.js.LICENSE.txt": "/adamc/static/js/2.ae22fad8.chunk.js.LICENSE.txt",
-    "static/media/logo.6e01816c.png": "/adamc/static/media/logo.6e01816c.png"
+    "static/css/main.5739ad41.chunk.css.map": "/adamc/static/css/main.5739ad41.chunk.css.map",
+    "static/js/2.c4e98195.chunk.js.LICENSE.txt": "/adamc/static/js/2.c4e98195.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/adamc/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ccf1af9.js",
-    "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.ae22fad8.chunk.js",
-    "static/css/main.71eadcd1.chunk.css",
-    "static/js/main.d7d306db.chunk.js"
+    "static/js/runtime-main.cd85ad9d.js",
+    "static/js/2.c4e98195.chunk.js",
+    "static/css/main.5739ad41.chunk.css",
+    "static/js/main.96f1fa81.chunk.js"
   ]
 }
