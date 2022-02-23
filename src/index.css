@@ -5,18 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background: black
-}
-@media screen and (min-width: 690px) {
-  body {
-    background: url('https://miro.medium.com/max/3840/1*PyExFMlUFx1Yv_28Nd1BRA.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
 }
 
 code {
