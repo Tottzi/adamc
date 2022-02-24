@@ -1,23 +1,16 @@
 {
   "files": {
-    "main.css": "/adamc/static/css/main.5739ad41.chunk.css",
-    "main.js": "/adamc/static/js/main.96f1fa81.chunk.js",
-    "main.js.map": "/adamc/static/js/main.96f1fa81.chunk.js.map",
-    "runtime-main.js": "/adamc/static/js/runtime-main.cd85ad9d.js",
-    "runtime-main.js.map": "/adamc/static/js/runtime-main.cd85ad9d.js.map",
-    "static/js/2.c4e98195.chunk.js": "/adamc/static/js/2.c4e98195.chunk.js",
-    "static/js/2.c4e98195.chunk.js.map": "/adamc/static/js/2.c4e98195.chunk.js.map",
-    "static/js/3.56d39c19.chunk.js": "/adamc/static/js/3.56d39c19.chunk.js",
-    "static/js/3.56d39c19.chunk.js.map": "/adamc/static/js/3.56d39c19.chunk.js.map",
+    "main.css": "/adamc/static/css/main.073c9b0a.css",
+    "main.js": "/adamc/static/js/main.dfbb4f83.js",
+    "static/js/787.c51a0406.chunk.js": "/adamc/static/js/787.c51a0406.chunk.js",
+    "static/media/logo.svg": "/adamc/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/adamc/index.html",
-    "static/css/main.5739ad41.chunk.css.map": "/adamc/static/css/main.5739ad41.chunk.css.map",
-    "static/js/2.c4e98195.chunk.js.LICENSE.txt": "/adamc/static/js/2.c4e98195.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/adamc/static/media/logo.6ce24c58.svg"
+    "main.073c9b0a.css.map": "/adamc/static/css/main.073c9b0a.css.map",
+    "main.dfbb4f83.js.map": "/adamc/static/js/main.dfbb4f83.js.map",
+    "787.c51a0406.chunk.js.map": "/adamc/static/js/787.c51a0406.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd85ad9d.js",
-    "static/js/2.c4e98195.chunk.js",
-    "static/css/main.5739ad41.chunk.css",
-    "static/js/main.96f1fa81.chunk.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.dfbb4f83.js"
   ]
 }
